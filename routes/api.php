@@ -7,6 +7,8 @@ use App\Http\Controllers\TimeController;
 use App\Http\Controllers\DisplayTextController;
 use App\Http\Controllers\BeerRecipeController;
 use App\Http\Controllers\TeamsController;
+use App\Http\Controllers\NominationController;
+
 
 
 
@@ -18,3 +20,4 @@ Route::get('/count-seconds', [TimeController::class, 'countSeconds'])->name("cou
 Route::get('/display-text', [DisplayTextController::class, 'displayText'])->name("display-text");
 Route::get('/beer-recipe', [BeerRecipeController::class, 'getRandomRecipe'])->name("random-recipe");
 Route::get('/generate-teams', [TeamsController::class, 'generateTeams'])->name("genrate-teams");
+Route::get('/generate-nomination', [NominationController::class, 'generateNomination'])->name("genrate-nomination");

@@ -33,7 +33,7 @@ class TeamsController extends Controller{
         }
         return response()->json([
             "status" => "Success",
-            "palindrome-count" => $teams_array
+            "teams" => $teams_array
         ], 200);
     }
 }
